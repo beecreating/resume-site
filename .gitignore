@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+public/styles.css
+
+# OS + Editor junk
+.DS_Store
+Thumbs.db
+*.log
+
+# Environment files (if you add them later)
+.env
+.env.local
