@@ -1,24 +1,224 @@
-<main class="mx-auto max-w-content px-5 py-14">
-  <section id="top" class="grid gap-8 md:grid-cols-[1.3fr_.7fr] items-center">
-    <div>
-      <h1 class="text-3xl md:text-5xl font-semibold leading-tight">
-        Iida Puomila — product-minded developer who ships helpful software.
-      </h1>
-      <p class="text-muted mt-3">
-        Go • TypeScript/Node • SQLite/Postgres • Tailwind • Healthtech
-      </p>
-      <div class="flex flex-wrap gap-3 mt-6">
-        <a href="#projects" class="inline-block bg-accent text-bg px-5 py-2 rounded-2xl font-medium">See projects</a>
-        <a href="/Iida-Puomila-Resume.pdf" class="inline-block border border-line px-5 py-2 rounded-2xl" download>Download CV (PDF)</a>
-      </div>
-      <div class="flex flex-wrap items-center gap-4 text-muted mt-5">
-        <span>📍 Finland</span>
-        <a class="underline underline-offset-4" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="underline underline-offset-4" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-      </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iida Puomila — Product-minded Developer</title>
+  <meta name="description" content="Iida Puomila — product-minded developer (Go, TypeScript/Node, Tailwind). Selected projects, experience, and contact." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Iida Puomila — Portfolio" />
+  <meta property="og:description" content="Go + TypeScript + healthtech. Selected projects and experience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body class="bg-bg text-ink antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-10 bg-bg/80 backdrop-blur border-b border-line/60">
+    <div class="mx-auto max-w-content px-6 h-16 flex items-center justify-between">
+      <a href="#top" class="font-medium tracking-wide">Iida Puomila</a>
+      <nav class="hidden md:block">
+        <ul class="flex items-center gap-8 text-sm text-muted">
+          <li><a class="hover:underline" href="#projects">Projects</a></li>
+          <li><a class="hover:underline" href="#experience">Experience</a></li>
+          <li><a class="hover:underline" href="#skills">Skills</a></li>
+          <li><a class="hover:underline" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="flex justify-center md:justify-end">
-      <div class="w-48 h-48 md:w-56 md:h-56 rounded-2xl bg-gradient-to-br from-[#1b2430] to-[#243548] border border-line"></div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="px-6">
+      <div class="mx-auto max-w-content py-28 text-center">
+        <h1 class="text-4xl md:text-6xl font-semibold tracking-tight leading-tight">
+          Thinking beyond the code.<br class="hidden md:block" />
+          I build helpful software that feels effortless.
+        </h1>
+        <p class="mt-4 text-lg text-muted">
+          Go • TypeScript/Node • SQLite/Postgres • Tailwind • Healthtech
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3 justify-center">
+          <a href="#projects" class="inline-block transition-transform hover:-translate-y-0.5">
+            <span class="bg-accent text-bg px-6 py-2 rounded-full font-medium">See projects</span>
+          </a>
+          <a href="/Iida-Puomila-Resume.pdf" download class="inline-block border border-line px-6 py-2 rounded-full">
+            Download CV (PDF)
+          </a>
+        </div>
+
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-4 text-muted">
+          <span>📍 Finland</span>
+          <a class="underline underline-offset-4" href="https://www.linkedin.com/in/iidapuomila" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="underline underline-offset-4" href="https://github.com/beecreating" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="mx-auto max-w-content px-6">
+      <hr class="border-line/60">
     </div>
-  </section>
-</main>
+
+    <!-- ROJECTit ois  sit niiku täs -->
+    <section id="projects" class="px-6">
+      <div class="mx-auto max-w-content py-24">
+        <header class="mb-10 text-center md:text-left">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Selected projects</h2>
+          <p class="text-muted mt-2">Tight, production-minded demos that show real shipping value.</p>
+        </header>
+
+        <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <li class="group border border-line rounded-2xl p-6 bg-panel transition-colors hover:border-accent">
+            <h3 class="text-lg font-medium">NotesTool (Go + HTML templates)</h3>
+            <p class="text-muted mt-2">Cookie-based search, compare view, JSON-backed data. Compact full-stack with SQLite.</p>
+            <ul class="flex flex-wrap gap-2 mt-4 text-sm text-muted">
+              <li class="border border-line rounded-full px-3 py-1">Go</li>
+              <li class="border border-line rounded-full px-3 py-1">SQLite</li>
+              <li class="border border-line rounded-full px-3 py-1">HTML/CSS</li>
+            </ul>
+            <div class="flex gap-2 mt-5">
+              <a class="text-sm border border-line rounded-lg px-3 py-1.5" href="#">Code</a>
+              <a class="text-sm border border-line rounded-lg px-3 py-1.5" href="#">Live</a>
+            </div>
+          </li>
+
+          <!-- Card 2 -->
+          <li class="group border border-line rounded-2xl p-6 bg-panel transition-colors hover:border-accent">
+            <h3 class="text-lg font-medium">RaceTrack Live Leaderboard</h3>
+            <p class="text-muted mt-2">Socket-powered live timing/flags with resilient client sync.</p>
+            <ul class="flex flex-wrap gap-2 mt-4 text-sm text-muted">
+              <li class="border border-line rounded-full px-3 py-1">Node</li>
+              <li class="border border-line rounded-full px-3 py-1">WebSocket</li>
+              <li class="border border-line rounded-full px-3 py-1">Vanilla JS</li>
+            </ul>
+            <div class="flex gap-2 mt-5">
+              <a class="text-sm border border-line rounded-lg px-3 py-1.5" href="#">Code</a>
+              <a class="text-sm border border-line rounded-lg px-3 py-1.5" href="#">Live</a>
+            </div>
+          </li>
+
+          <!-- Card 3 -->
+          <li class="group border border-line rounded-2xl p-6 bg-panel transition-colors hover:border-accent">
+            <h3 class="text-lg font-medium">Kuutar (women’s health)</h3>
+            <p class="text-muted mt-2">Accessible UI, earthy palette, clear data model. Focus on inclusion & functioning.</p>
+            <ul class="flex flex-wrap gap-2 mt-4 text-sm text-muted">
+              <li class="border border-line rounded-full px-3 py-1">Go</li>
+              <li class="border border-line rounded-full px-3 py-1">Design</li>
+              <li class="border border-line rounded-full px-3 py-1">Accessibility</li>
+            </ul>
+            <div class="flex gap-2 mt-5">
+              <a class="text-sm border border-line rounded-lg px-3 py-1.5" href="#">Case</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="px-6 bg-[#0e1216]">
+      <div class="mx-auto max-w-content py-24">
+        <header class="mb-10 text-center md:text-left">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Experience</h2>
+          <p class="text-muted mt-2">Blending health-care business, data, and code.</p>
+        </header>
+
+        <ul>
+          <li class="grid grid-cols-[18px_1fr] gap-3 py-3">
+            <span class="w-2.5 h-2.5 rounded-full bg-accent mt-2"></span>
+            <div>
+              <h3 class="font-medium">Developer • Projects & Freelance</h3>
+              <p class="text-sm text-muted">2024—2025</p>
+              <p class="mt-1 text-muted">Built production-like demos in Go/JS. Focus on clean UX, small dependable services, and shipping.</p>
+            </div>
+          </li>
+
+          <li class="grid grid-cols-[18px_1fr] gap-3 py-3">
+            <span class="w-2.5 h-2.5 rounded-full bg-accent mt-2"></span>
+            <div>
+              <h3 class="font-medium">Health-care Business & Data</h3>
+              <p class="text-sm text-muted">2018—2024</p>
+              <p class="mt-1 text-muted">Bridged operations, analytics, and stakeholders. Clear communication with non-technical teams.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="px-6">
+      <div class="mx-auto max-w-content py-24">
+        <header class="mb-10 text-center md:text-left">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Skills</h2>
+          <p class="text-muted mt-2">The tools I actually use and can discuss in depth.</p>
+        </header>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          <div>
+            <h3 class="font-medium">Backend</h3>
+            <ul class="list-disc ml-6 mt-3 space-y-1 text-muted">
+              <li>Go (net/http, templates)</li>
+              <li>Node/Express</li>
+              <li>SQLite, Postgres</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-medium">Frontend</h3>
+            <ul class="list-disc ml-6 mt-3 space-y-1 text-muted">
+              <li>Semantic HTML, Tailwind</li>
+              <li>React / Next basics</li>
+              <li>Accessible forms & navigation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="px-6 bg-[#0e1216]">
+      <div class="mx-auto max-w-content py-24">
+        <header class="mb-10 text-center md:text-left">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Contact</h2>
+          <p class="text-muted mt-2">Quickest: email. I reply within 24h.</p>
+        </header>
+
+        <form class="grid gap-3 max-w-lg" action="/contact" method="POST">
+          <label class="grid gap-1">
+            <span>Name</span>
+            <input class="bg-[#0a0d11] border border-line rounded-xl px-3 py-2" name="name" type="text" required />
+          </label>
+          <label class="grid gap-1">
+            <span>Email</span>
+            <input class="bg-[#0a0d11] border border-line rounded-xl px-3 py-2" name="email" type="email" required />
+          </label>
+          <label class="grid gap-1">
+            <span>Message</span>
+            <textarea class="bg-[#0a0d11] border border-line rounded-xl px-3 py-2" name="message" rows="5" required></textarea>
+          </label>
+          <button class="bg-accent text-bg rounded-2xl px-5 py-2 w-max transition hover:opacity-90" type="submit">
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="px-6">
+    <div class="mx-auto max-w-content h-20 border-t border-line/60 flex items-center justify-between text-muted">
+      <p>© <span id="year"></span> Iida Puomila</p>
+      <a href="#top" class="hover:underline">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

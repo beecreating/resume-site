@@ -9,6 +9,10 @@ module.exports = {
       },
       maxWidth: { content: "980px" },
       borderRadius: { "2xl": "1rem" },
+      /* You can add this in tailwind.config.js */
+      fontFamily: {
+        sans: ['-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','sans-serif']
+      } 
     },
   },
   plugins: [],
