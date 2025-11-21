@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Miltä näyttää Euroopan suurin AI-hackathon</title>
+    <meta
+      name="description"
+      content="Vapaaehtoisen näkökulma Euroopan suurimpaan tekoälyhackathoniin, Junctioniin – tunnelma, oppiminen ja viikonlopun aikajana."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <link rel="stylesheet" href="blog_styles.css" />
+    <a class="back-banner" href="/index.html">← Takaisin etusivulle</a>
+
+
+  </head>
+
+  <body>
+    <main class="page">
+      <article class="post">
+        <div class="post-inner">
+          <header class="post-header">
+            <p class="post-kicker">Blogi</p>
+            <h1>Miltä näyttää Euroopan suurin AI-hackathon</h1>
+          </header>
+
+          <section class="post-body">
+            <p>
+              Marraskuun puolivälissä 1 500 koodaria valtasi Espoon HypeAreenan
+              Euroopan suurimpaan tekoälyhackathoniin, Junctioniin. 48 tuntia
+              aikaa suunnitella ja koodata projekti, joka kilpailee 50 000 euron
+              pääpalkinnosta, lisäksi tapahtumassa oli yritysyhteistyökumppaneiden
+              haasteita mm. Fortum, Wolt, Harvia, Suomen Pankki, Supercell,
+              Snapchat ja Traficom.
+            </p>
+          </section>
+
+          <!-- JUNCTION LUKUINA -ANIMAATIO -->
+          <section id="junction-stats" class="post-visual">
+            <div class="stats-container">
+              <h2>Junction lukuina</h2>
+
+              <div class="stat" data-target="1500">
+                <span class="stat-number">0</span>
+                <span class="stat-label">osallistujaa</span>
+              </div>
+
+              <div class="stat" data-target="111">
+                <span class="stat-number">0</span>
+                <span class="stat-label">kansallisuutta</span>
+              </div>
+
+              <div class="stat" data-target="48">
+                <span class="stat-number">0</span>
+                <span class="stat-label">tuntia koodausta</span>
+              </div>
+
+              <div class="stat" data-target="50">
+                <span class="stat-number">0</span>
+                <span class="stat-label">partneria</span>
+              </div>
+
+              <div class="stat" data-target="50000">
+                <span class="stat-number">0</span>
+                <span class="stat-label">€ pääpalkinto</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="post-body">
+            <p>
+              Tapahtuma keräsi yhteen 111 eri kansallisuutta eri alojen
+              ammattilaisia, opiskelijoita, harrastajia ja alan konkareita, jotka
+              saapuivat samaa tarkoitusta varten: rakentamaan jotain, mikä ei
+              vielä eilen ollut olemassa.
+            </p>
+
+            <p>
+              Tiimit syntyivät joko vanhoista kavereista tai täysin
+              tuntemattomista, jotka tapasivat toisiaan vasta paikan päällä.
+              Seurasin kaikkea tätä vapaaehtoisena, kulkien yön yli avoinna olevan
+              areenan läpi, kahvijonojen läpi ja tiimien välisiin hiljaisiin,
+              keskittyneisiin keskusteluihin. Tunnelma oli jotain, mitä
+              koulukursseilla ei voi koskaan saavuttaa.
+            </p>
+
+            <p>
+              Tekoäly on monella tapaa mullistanut oppimisen IT-alalla ja sen
+              huomaa. Kyseessä on kuitenkin lopulta taito, jota voi kartuttaa
+              kiinnostumalla, heittäytymällä ja tekemällä työtä – sen sijaan, että
+              antaa tekoälyn tehdä kaiken. Oikein käytettynä se mahdollistaa
+              jatkuvan oppimisen ja tekee vasta alkajastakin luovan.
+            </p>
+
+            <p>
+              Red Bull virtasi ja monet koodaajat työskentelivät läpi yön.
+              Lopullinen tapahtuman voittaja julkaistiin sunnuntaina partneri- ja
+              peer-arviointien jälkeen. Voittajatiimi osallistui Sensofusionin
+              Radio City -haasteeseen ja rakensi radio- ja EM-aaltojen
+              simulaatioita Hongkongin kartalle – ironista kyllä, ratkaisussa ei
+              käytetty tekoälyä lainkaan.
+            </p>
+          </section>
+
+          <!-- VIIKONLOPUN AIKAJANA -->
+          <section id="junction-timeline" class="post-visual">
+            <h2>Junction-viikonlopun kulku</h2>
+            <p class="timeline-intro">
+              Perjantain avauksesta sunnuntain voittajiin – klikkaa läpi, miten 48
+              tunnin hackathon rakentuu.
+            </p>
+
+            <div id="timeline" class="timeline"></div>
+
+            <div class="timeline-controls">
+              <button id="timeline-prev" class="timeline-btn" disabled>← Edellinen</button>
+              <span id="timeline-step" class="timeline-card_step">1 / ?</span>
+              <button id="timeline-next" class="timeline-btn">Seuraava →</button>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <!-- Skriptit -->
+    <script src="blog_stats.js" defer></script>
+    <script src="timeline.js" defer></script>
+  </body>
+</html>
