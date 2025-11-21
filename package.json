@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --watch src --exec ts-node src/server.ts",
     "tw:dev": "tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
-    "build": "tsc -p tsconfig.json && tailwindcss -i ./src/input.css -o ./public/styles.css --minify",
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/styles.css --minify",
+    "build": "tsc -p tsconfig.json && npm run build:css",
     "start": "node dist/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://gitea.kood.tech/iidapuomila/rs.git"
+    "url": "https://github.com/beecreating/resume-site.git"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +21,6 @@
   "devDependencies": {
     "@types/express": "^5.0.5",
     "@types/node": "^24.10.1",
-    "@types/nodemailer": "^7.0.4",
     "autoprefixer": "^10.4.21",
     "nodemon": "^3.1.10",
     "postcss": "^8.5.6",
@@ -31,7 +30,6 @@
   },
   "dependencies": {
     "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "nodemailer": "^7.0.10"
+    "express": "^5.1.0"
   }
 }
