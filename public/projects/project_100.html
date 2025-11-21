@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>100 Engineers – Hackathon Challenge Game</title>
+  <meta name="description" content="100 Engineers – a hackathon challenge game concept about managing engineers with traits and unpredictable outcomes." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="bg-bg text-ink antialiased">
+
+  <!-- Header -->
+  <header class="px-6 py-4 border-b border-line bg-[#0e1216]">
+    <div class="mx-auto max-w-content flex items-center justify-between">
+      <a href="/" class="font-semibold tracking-tight text-lg">Iida Puomila</a>
+
+      <nav class="hidden md:flex gap-6 text-muted text-sm">
+        <a href="/#projects" class="hover:text-accent">Projects</a>
+        <a href="/#experience" class="hover:text-accent">Experience</a>
+        <a href="/#skills" class="hover:text-accent">Skills</a>
+        <a href="/#contact" class="hover:text-accent">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-6">
+    <div class="mx-auto max-w-content py-16">
+
+      <a href="/" class="text-sm text-muted hover:text-accent">&larr; Back to home</a>
+
+      <!-- Intro -->
+      <header class="mt-6 mb-10 max-w-2xl">
+        <h1 class="text-3xl md:text-4xl font-semibold tracking-tight">
+          100 Engineers – Hackathon Challenge Game
+        </h1>
+        <p class="mt-3 text-muted">
+          A fast-paced hackathon game concept where players manage a limited pool of “engineers”
+          with unique traits, unpredictable events and high-stakes project deadlines.
+          Designed and built during hackathon weekends, combining humor, teamwork, UX thinking and
+          systems design.
+        </p>
+      </header>
+
+      <!-- Meta info -->
+      <section class="grid gap-6 md:grid-cols-3 mb-12 text-sm text-muted">
+        <div>
+          <h2 class="font-medium text-ink">Event</h2>
+          <p>Hackathon challenge (multiple events)</p>
+        </div>
+        <div>
+          <h2 class="font-medium text-ink">Role</h2>
+          <p>Concept, narrative design, character logic, UX & flow planning</p>
+        </div>
+        <div>
+          <h2 class="font-medium text-ink">Status</h2>
+          <p>Ongoing passion project</p>
+        </div>
+      </section>
+
+      <!-- Screens / visuals -->
+      <section class="mb-12">
+        <h2 class="text-xl font-medium mb-4">Screens & visuals</h2>
+
+        <div class="grid gap-4 md:grid-cols-2">
+          <figure class="rounded-2xl border border-line bg-[#0e1216] overflow-hidden">
+            <img
+              src="/projects/100/100xengineers-overview.png"
+              alt="100 Engineers game overview"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="rounded-2xl border border-line bg-[#0e1216] overflow-hidden">
+            <img
+              src="/projects/100/100xengineers-gameplay.png"
+              alt="Project flow design for 100 Engineers"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- What I focused on -->
+      <section class="space-y-4 text-muted max-w-3xl">
+        <h2 class="text-xl font-medium text-ink">What the challenge was about</h2>
+        <p>
+          The hackathon theme was to create a playful, technically interesting experience
+          with meaningful decision-making. Our team created a “resource management” game where you
+          control a group of robot engineers. Each engineer has three personality traits that affect
+          whether a project succeeds, fails, or… explodes in chaos.
+        </p>
+        <p>
+          The fun twist: when engineers fail catastrophically, they can die in hilarious ways.
+          When they succeed, they “retire” and can’t be reused — forcing smart allocation.
+        </p>
+
+        <h2 class="text-xl font-medium text-ink mt-6">My role</h2>
+        <ul class="list-disc ml-6 space-y-2">
+          <li>Designed engineer traits and how they influence project outcomes</li>
+          <li>Wrote narrative event texts (success, failure, near-death, chaos outcomes)</li>
+          <li>Planned the UX flow and decision-making screens</li>
+          <li>Mapped a 10-month project timeline with monthly choices</li>
+          <li>Helped coordinate team tasks and keep scope manageable under time pressure</li>
+        </ul>
+
+        <h2 class="text-xl font-medium text-ink mt-6">What I learned</h2>
+        <ul class="list-disc ml-6 space-y-2">
+          <li>How to build game logic that is both readable and unpredictable</li>
+          <li>Fast decision-making and prioritization during hackathons</li>
+          <li>Collaborating with developers, designers and writers under tight deadlines</li>
+          <li>How to bring humor and personality into tech projects</li>
+          <li>Delivering something playable within 48 hours</li>
+        </ul>
+
+        <h2 class="text-xl font-medium text-ink mt-6">Why this project matters to me</h2>
+        <p>
+          100 Engineers represents exactly what I enjoy about hackathons:
+          creativity, collaboration, quick prototyping, and the adrenaline of shipping
+          something fun and original.  
+          I’ve attended multiple hackathons and every event has improved my ability to think quickly,
+          plan well, and communicate clearly with the team.
+        </p>
+
+        <p class="mt-4">
+          This project is ongoing — I plan to turn the prototype into a polished version with real UI,
+          animations, and deeper project logic.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="px-6 py-10 bg-[#0e1216] border-t border-line mt-20">
+    <div class="mx-auto max-w-content text-center text-muted text-sm">
+      © <span id="year"></span> Iida Puomila. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

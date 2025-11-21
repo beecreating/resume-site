@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kuutar – Women’s health & longevity app</title>
+  <meta name="description" content="Kuutar – a women’s health & longevity concept app by Iida Puomila, focusing on PMS, PMDD and hormonal balance." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="bg-bg text-ink antialiased">
+
+  <!-- Header (same as front page) -->
+  <header class="px-6 py-4 border-b border-line bg-[#0e1216]">
+    <div class="mx-auto max-w-content flex items-center justify-between">
+      <a href="/" class="font-semibold tracking-tight text-lg">Iida Puomila</a>
+
+      <nav class="hidden md:flex gap-6 text-muted text-sm">
+        <a href="/#projects" class="hover:text-accent">Projects</a>
+        <a href="/#experience" class="hover:text-accent">Experience</a>
+        <a href="/#skills" class="hover:text-accent">Skills</a>
+        <a href="/#contact" class="hover:text-accent">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-6">
+    <div class="mx-auto max-w-content py-16">
+      <a href="/" class="text-sm text-muted hover:text-accent">&larr; Back to home</a>
+
+      <!-- Intro -->
+      <header class="mt-6 mb-10 max-w-2xl">
+        <h1 class="text-3xl md:text-4xl font-semibold tracking-tight">
+          Kuutar – Women’s health & longevity app
+        </h1>
+        <p class="mt-3 text-muted">
+          A concept app focusing on PMS, PMDD and hormonal balance, combining ICF data, lifestyle coaching
+          and accessibility-first design. Calm, non-judgmental, and designed for people who are exhausted
+          by “optimize your productivity” apps.
+        </p>
+      </header>
+
+      <!-- Meta info -->
+      <section class="grid gap-6 md:grid-cols-3 mb-12 text-sm text-muted">
+        <div>
+          <h2 class="font-medium text-ink">Role</h2>
+          <p>Concept, UX thinking, product direction</p>
+        </div>
+        <div>
+          <h2 class="font-medium text-ink">Stack</h2>
+          <p>Figma, UX flows, Notion, research</p>
+        </div>
+        <div>
+          <h2 class="font-medium text-ink">Status</h2>
+          <p>Ongoing side project</p>
+        </div>
+      </section>
+
+      <!-- Screens & visuals -->
+      <section class="mb-12">
+        <h2 class="text-xl font-medium mb-4">Screens & visuals</h2>
+        <div class="grid gap-4 md:grid-cols-2">
+          <figure class="rounded-2xl border border-line bg-[#0e1216] overflow-hidden">
+            <img
+              src="/projects/kuutar/kuutar-front.png"
+              alt="Kuutar main screen"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="rounded-2xl border border-line bg-[#0e1216] overflow-hidden">
+            <img
+              src="/projects/kuutar/kuutar-kalenteri.png"
+              alt="Kuutar tracking view"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <p class="text-xs text-muted mt-2">
+        </p>
+      </section>
+
+      <!-- Story -->
+      <section class="space-y-4 text-muted max-w-3xl">
+        <h2 class="text-xl font-medium text-ink">What I focused on</h2>
+        <p>
+          Kuutar started from my own interest in women’s health and nervous system–friendly routines.
+          The goal is to build something that feels calm, kind and understandable also for users who are
+          not “tech people”.
+        </p>
+        <p>
+          I mapped out user journeys, experimented with visual identity, and defined how to integrate
+          ICF-based data with daily tracking in a way that doesn’t overwhelm the user.
+        </p>
+
+        <h2 class="text-xl font-medium text-ink mt-6">What I actually did</h2>
+        <ul class="list-disc ml-6 space-y-2">
+          <li>Explored data structures combining cycle data, symptoms, functioning and routines.</li>
+          <li>Sketched flows for onboarding, “bad day” modes and daily check-ins with low cognitive load.</li>
+          <li>Experimented with a warm, grown-up visual identity that avoids both clinical coldness and pink-washing.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer (same as front page) -->
+  <footer class="px-6 py-10 bg-[#0e1216] border-t border-line mt-20">
+    <div class="mx-auto max-w-content text-center text-muted text-sm">
+      © <span id="year"></span> Iida Puomila. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

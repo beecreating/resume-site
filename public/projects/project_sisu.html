@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kood Sisu – Software Developer Studies</title>
+  <meta name="description" content="Hands-on software development studies with Go, JavaScript, Python, web fundamentals and real project work." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="bg-bg text-ink antialiased">
+
+  <!-- Header -->
+  <header class="px-6 py-4 border-b border-line bg-[#0e1216]">
+    <div class="mx-auto max-w-content flex items-center justify-between">
+      <a href="/" class="font-semibold tracking-tight text-lg">Iida Puomila</a>
+
+      <nav class="hidden md:flex gap-6 text-muted text-sm">
+        <a href="/#projects" class="hover:text-accent">Projects</a>
+        <a href="/projects/kood-sisu.html" class="hover:text-accent">Kood Sisu</a>
+        <a href="/#experience" class="hover:text-accent">Experience</a>
+        <a href="/#skills" class="hover:text-accent">Skills</a>
+        <a href="/#contact" class="hover:text-accent">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-6">
+    <div class="mx-auto max-w-content py-16">
+
+      <a href="/" class="text-sm text-muted hover:text-accent">&larr; Back to home</a>
+
+      <!-- Intro -->
+      <header class="mt-6 mb-10 max-w-2xl">
+        <h1 class="text-3xl md:text-4xl font-semibold tracking-tight">
+          Kood Sisu – Software Developer Studies
+        </h1>
+        <p class="mt-3 text-muted">
+          A highly practical software development program focused on coding fundamentals,
+          real-world project work, problem solving and clean engineering habits.
+          I’ve built applications in Go, JavaScript and Python while developing strong 
+          foundations in backend, frontend and data work.
+        </p>
+      </header>
+
+      <!-- Meta info -->
+      <section class="grid gap-6 md:grid-cols-3 mb-12 text-sm text-muted">
+        <div>
+          <h2 class="font-medium text-ink">Role</h2>
+          <p>Software developer student</p>
+        </div>
+        <div>
+          <h2 class="font-medium text-ink">Stack</h2>
+          <p>Go, JavaScript, Python, HTML/CSS, SQLite, Git, Node</p>
+        </div>
+        <div>
+          <h2 class="font-medium text-ink">Status</h2>
+          <p>2024–present</p>
+        </div>
+      </section>
+
+      <!-- Screens / visuals -->
+      <section class="mb-12">
+        <h2 class="text-xl font-medium mb-4">Study projects & exercises</h2>
+
+        <div class="grid gap-4 md:grid-cols-2">
+          <figure class="rounded-2xl border border-line bg-[#0e1216] overflow-hidden">
+            <img
+              src="/projects/kood-sisu/sisu-projects.png"
+              alt="Kood Sisu study projects overview"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="rounded-2xl border border-line bg-[#0e1216] overflow-hidden">
+            <img
+              src="/projects/kood-sisu/sisu-terminal.png"
+              alt="Terminal view of Go or JS assignment"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+
+        <p class="text-xs text-muted mt-2">
+          Replace <code>sisu-projects.png</code> and <code>sisu-terminal.png</code> with your actual screenshots.
+        </p>
+      </section>
+
+      <!-- Learning focus -->
+      <section class="space-y-4 text-muted max-w-3xl">
+        <h2 class="text-xl font-medium text-ink">What I focused on</h2>
+
+        <ul class="list-disc ml-6 space-y-2">
+          <li>Building clean, simple applications in Go, JavaScript and Python</li>
+          <li>Understanding backend basics: routing, handlers, templates, JSON and APIs</li>
+          <li>Frontend fundamentals: semantic HTML, Tailwind, accessibility</li>
+          <li>Working with SQLite and JSON as storage formats</li>
+          <li>Using Git consistently and learning project structure best practices</li>
+          <li>Reinforcing problem-solving, debugging and thinking like an engineer</li>
+        </ul>
+
+        <h2 class="text-xl font-medium text-ink mt-6">Highlighted coursework</h2>
+        <ul class="list-disc ml-6 space-y-2">
+          <li><strong>Train pathfinder (Go):</strong> BFS/DFS, path optimization, clean architecture</li>
+          <li><strong>Car comparison web app (Go + HTML/Tailwind):</strong> JSON API integration, dynamic views</li>
+          <li><strong>Live leaderboard (Node/WebSockets):</strong> real-time flags & client sync</li>
+          <li><strong>100 Engineers demo game:</strong> system planning, narrative design, program logic</li>
+          <li><strong>CLI & utility tools:</strong> JSON handling, parsing, file IO, error handling</li>
+        </ul>
+
+        <h2 class="text-xl font-medium text-ink mt-6">Soft skills strengthened</h2>
+        <ul class="list-disc ml-6 space-y-2">
+          <li>Breaking big tasks into small, shippable parts</li>
+          <li>Working independently and iterating quickly</li>
+          <li>Communicating technical problems clearly</li>
+          <li>Developing confidence through building real things</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="px-6 py-10 bg-[#0e1216] border-t border-line mt-20">
+    <div class="mx-auto max-w-content text-center text-muted text-sm">
+      © <span id="year"></span> Iida Puomila. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
