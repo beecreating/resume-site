@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch src --exec ts-node src/server.ts",
-    "tw:dev": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
-    "build:css": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --minify",
-    "build": "tsc -p tsconfig.json && npm run build:css",
-    "start": "node dist/server.js"
+  "dev": "nodemon --watch src --exec ts-node src/server.ts",
+  "tw:dev": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
+  "build:css": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --minify",
+  "build": "tsc -p tsconfig.json",
+  "start": "node dist/server.js"
   },
   "repository": {
     "type": "git",
