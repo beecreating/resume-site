@@ -19,8 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       events: [
         {
           time: "00:00–23:59",
-          title: "Hacking",
-          type: "Hacking",
+          title: "Koodaus & mentorointi",
           highlight: true,
         },
       ],
@@ -107,8 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     container.appendChild(card);
 
-    // scrollataan uusin kortti näkyviin
-    card.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   // aloitus: näytä eka card
@@ -120,18 +117,42 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentIndex >= steps.length - 1) return;
     currentIndex += 1;
     appendCard(currentIndex);
+
+    // scroll only AFTER clicking next
+    const cards = container.querySelectorAll(".timeline-card");
+    const newCard = cards[cards.length - 1];
+    newCard.scrollIntoView({ behavior: "smooth", block: "start" });
+
     updateControls(currentIndex);
   });
 
   // Edellinen: ei poista mitään, vaan scrollaa edelliseen korttiin
+  // Edellinen: poistaa viimeisimmän kortin ja sitä edeltävän connectorin
   prevBtn.addEventListener("click", () => {
     if (currentIndex <= 0) return;
-    currentIndex -= 1;
+
+    // Poistetaan viimeinen kortti
     const cards = container.querySelectorAll(".timeline-card");
-    const targetCard = cards[currentIndex];
+    const lastCard = cards[cards.length - 1];
+    if (lastCard) lastCard.remove();
+
+    // Poistetaan myös viimeinen connector (jos on)
+    const connectors = container.querySelectorAll(".timeline-connector");
+    const lastConnector = connectors[connectors.length - 1];
+    if (lastConnector) lastConnector.remove();
+
+    // Päivitä index
+    currentIndex -= 1;
+
+    // Scrollataan edelliseen korttiin
+    const nowCards = container.querySelectorAll(".timeline-card");
+    const targetCard = nowCards[nowCards.length - 1];
+
     if (targetCard) {
       targetCard.scrollIntoView({ behavior: "smooth", block: "start" });
     }
+
     updateControls(currentIndex);
   });
+
 });

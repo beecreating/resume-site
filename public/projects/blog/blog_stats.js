@@ -1,17 +1,21 @@
-
 document.addEventListener("DOMContentLoaded", () => {
+  const statsSection = document.getElementById("junction-stats");
   const stats = document.querySelectorAll("#junction-stats .stat");
 
-  stats.forEach((stat, index) => {
+  if (!statsSection || !stats.length) return;
+
+  let started = false;
+
+  function startStatAnimation(stat, index) {
     const numberEl = stat.querySelector(".stat-number");
     const target = Number(stat.getAttribute("data-target")) || 0;
 
     let current = 0;
-    const steps = 40;
+    const steps = 120; // enemmän steppejä → hitaampi ja smoothimpi
     const increment = target / steps;
 
-    // pieni viive per stat, että ne tulevat aaltona
-    const delay = 300 + index * 250;
+    // isompi viive aaltoon (drama)
+    const delay = 400 + index * 300;
 
     setTimeout(() => {
       stat.classList.add("active");
@@ -28,5 +32,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       update();
     }, delay);
+  }
+
+  // Käynnistä animaatiot vasta, kun lukija klikkaa stats-osiota
+  statsSection.addEventListener("click", () => {
+    if (started) return; // vain kerran
+    started = true;
+
+    stats.forEach((stat, index) => {
+      startStatAnimation(stat, index);
+    });
   });
 });
