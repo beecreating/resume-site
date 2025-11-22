@@ -1,3 +1,11 @@
+Iida Puomila – Personal Resume Website
+
+A clean, Apple-inspired, modern resume website built with TypeScript, Node/Express, and TailwindCSS.
+Showcases my skills, projects, and personality in a minimal yet polished and professional way. Personal gitHub is very empty unlike the school's one, but trying to get better at show casing my passion here too. 
+
+If you are interested in the finished product here it is: https://resume-site-mq3r.onrender.com/ 
+
+
 1. Install dependencies
 npm install
 
