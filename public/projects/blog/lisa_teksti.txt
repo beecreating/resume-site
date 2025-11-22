@@ -1,0 +1,28 @@
+          <section id="partners" class="post-visual">
+            <h2>Yhteistyökumppanit</h2>
+            <ul class="partners-list">
+              <li>Sensofusion</li>
+              <li>Snapchat</li>
+              <li>Norrin</li>
+              <li>Harvia</li>
+              <li>Denso</li>
+              <li>Logitech</li>
+              <li>Espoo City</li>
+              <li>Supercell</li>
+              <li>Fortum</li>
+              <li>Pfizer X Aava</li>
+              <li>Figma</li>
+              <li>Helsinki Education Hub</li>
+              <li>Interact</li>
+              <li>Wolt</li>
+              <li>Procter & Gamble</li>
+              <li>SAS</li>
+              <li>Valmet X HSY</li>
+              <li>n8n</li>
+              <li>Traficom</li>
+              <li>Bank of Finland</li>
+              <li>Valio Aimo</li>
+              <li>Aalto University</li>
+              <li>WithSecure</li>
+            </ul>
+          </section>
